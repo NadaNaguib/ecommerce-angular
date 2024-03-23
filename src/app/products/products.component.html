@@ -1,0 +1,12 @@
+<app-hero></app-hero>
+<section class="section">
+    <h2 class=" px-3 py-5 position-relative mx-auto w-fit">
+      POPULAR RIGHT NOW
+    </h2>
+    <div class="container products-grid d-grid">
+      <!-- Card -->
+      @for (product of productsArr; track $index) {
+      <app-product-card [productItem]="product"></app-product-card>
+      }
+    </div>
+  </section>  
